@@ -21,7 +21,7 @@ class UsersSeeder extends Seeder
             'name' => 'Santiago',
             'apellidos' => 'Pérez',
             'email' => 'santiagoperez@live.cl',
-            'password' => 'septile',
+            'password' => '123412',
             'rut' => '19486800-6',
             'telefono' => '+56954846344',
             'sexo' => 'hombre',
