@@ -14,6 +14,9 @@ class CreateSessionsTable extends Migration
     public function up()
     {
         Schema::create('sessions', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+
             $table->increments('id');
             $table->integer('psicologo_id')->unsigned();
             $table->integer('paciente_id')->unique()->unsigned();

@@ -14,6 +14,9 @@ class CreateUserTypesTable extends Migration
     public function up()
     {
         Schema::create('user_types', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+
             $table->increments('id');
             $table->String('name');
             $table->timestamps();

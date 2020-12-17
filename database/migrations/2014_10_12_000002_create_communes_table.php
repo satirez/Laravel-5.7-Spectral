@@ -14,6 +14,9 @@ class CreateCommunesTable extends Migration
     public function up()
     {
         Schema::create('communes', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+
             $table->increments('id');
             $table->string('name');
             $table->integer('region_id')->unsigned();

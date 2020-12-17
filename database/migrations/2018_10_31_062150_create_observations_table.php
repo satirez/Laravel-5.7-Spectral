@@ -14,6 +14,9 @@ class CreateObservationsTable extends Migration
     public function up()
     {
         Schema::create('observations', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+
             $table->increments('id');
             $table->integer('psicologo_id')->unsigned();
             $table->integer('sesion_id')->unsigned();

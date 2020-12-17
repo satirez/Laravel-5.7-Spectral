@@ -27,7 +27,7 @@
                                 <th>Categoria</th>
                               <th colspan="3">
 
-<input class="form-control" id="myInput" type="text" onkeyup="myFunction()" placeholder="Buscar por...">
+                        <input class="form-control" id="myInput" type="text" onkeyup="myFunction()" placeholder="Buscar por...">
 
                                 <th colspan="3">&nbsp;</th>
                             </tr>

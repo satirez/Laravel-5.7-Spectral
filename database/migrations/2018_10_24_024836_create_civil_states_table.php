@@ -14,6 +14,9 @@ class CreateCivilStatesTable extends Migration
     public function up()
     {
         Schema::create('civil_states', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+
             $table->increments('id');
             $table->string('name');
             $table->timestamps();

@@ -14,6 +14,9 @@ class CreateDiseasesTable extends Migration
     public function up()
     {
         Schema::create('diseases', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+
             $table->increments('id')->unique();
             $table->string('name');
             $table->timestamps();

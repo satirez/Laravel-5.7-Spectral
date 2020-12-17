@@ -14,6 +14,9 @@ class CreateHistorialsTable extends Migration
     public function up()
     {
         Schema::create('historials', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+
             $table->increments('id');
             $table->integer('sesion_id')->unsigned();
             $table->integer('asistencia_id')->unsigned();

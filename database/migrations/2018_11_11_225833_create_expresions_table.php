@@ -14,6 +14,9 @@ class CreateExpresionsTable extends Migration
     public function up()
     {
         Schema::create('expresions', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+
             $table->increments('id');
             $table->integer('level_id')->unsigned();
             $table->integer('categoria_id')->unsigned();
